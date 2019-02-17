@@ -20,9 +20,11 @@ if slack_client.rtm_connect():
                 'channel' in event and
                 'text' in event and
                 event.get('type') == 'message'
-            ):
                 user = event['user']
                 text = event['text']
+            ):
+                # user = event['user']
+                # text = event['text']
 
                     # Helena calls the Google API, gets sentiment score
                         #score =
