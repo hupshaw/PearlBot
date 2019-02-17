@@ -14,6 +14,8 @@ starterbot_id = None
 
 if slack_client.rtm_connect():
     print("Connected")
+    #set image to regular
+
     while True:
         print("Listening...")
         events = events = slack_client.rtm_read()
@@ -42,10 +44,13 @@ if slack_client.rtm_connect():
                         slack_client.api_call(
                             "chat.postMessage",
                             channel=response["channel"]["id"],
-                            text=message
+                            text=message,
+                            status_emoji=":angrypearl:"
                         )
+                        #set to unpset image
                         print("DM Sent")
                     else:
+                        #set to happy image
                         print("All Good")
 
 
