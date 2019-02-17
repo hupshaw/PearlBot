@@ -42,12 +42,11 @@ if slack_client.rtm_connect():
                     )
                     print(response["channel"]["id"])
 
-                    # slack_client.api_call(
-                    #     "chat.postMessage",
-                    #     channel="im.open",
-                    #     user=user,
-                    #     text="This is a DM"
-                    # )
+                    slack_client.api_call(
+                        "chat.postMessage",
+                        channel=response["channel"]["id"],
+                        text="Testing 1 2 3"
+                    )
                     print("DM Sent")
                 else:
                     print("All Good")
