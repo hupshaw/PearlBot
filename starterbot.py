@@ -29,12 +29,18 @@ if slack_client.rtm_connect():
                 if len(text) > 1:
                 # Helena looks the sentiment score from API up in Database
                 # Helena returns to you a string (message) to be posted by the slack bot to the user
-                    print(
-                        slack_client.api_call(
-                            "im.open",
-                            user=user
-                        )
+                    # print(
+                    #     slack_client.api_call(
+                    #         "im.open",
+                    #         user=user
+                    #     )
+                    # )
+
+                    response = slack_client.api_call(
+                        "im.open",
+                        user=user
                     )
+                    print(response["channel"]["id"])
 
                     # slack_client.api_call(
                     #     "chat.postMessage",
