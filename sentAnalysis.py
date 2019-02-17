@@ -20,16 +20,16 @@ def print_result(annotations):
         sentence_sentiment = sentence.sentiment.score
 
     if sentence_sentiment < 0 and sentence_sentiment >= -.3:
-       r = random.randint(0,len(jsonObj["low"]))
+       r = random.randint(0,len(jsonObj["low"])-1)
        #print(len(jsonObj["low"]))
        #print("low " + str(r))
        message = jsonObj["low"][r]
     elif sentence_sentiment < -.3 and sentence_sentiment >= -.6:
-       r = random.randint(0,len(jsonObj["medium"]))
+       r = random.randint(0,len(jsonObj["medium"])-1)
        #print("med " + str(r))
        message = jsonObj["medium"][r]
     else:
-       r = random.randint(0,len(jsonObj["high"]))
+       r = random.randint(0,len(jsonObj["high"])-1)
        #print("high " +str(r))
        message = jsonObj["high"][r]
 

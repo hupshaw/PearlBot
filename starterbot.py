@@ -49,6 +49,6 @@ if slack_client.rtm_connect():
                         print("All Good")
 
 
-        time.sleep(2)
+        time.sleep(1.5)
 else:
     print('Connection failed, invalid token? Big sad')
