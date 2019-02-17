@@ -21,7 +21,7 @@ if slack_client.rtm_connect():
                 'text' in event and
                 event.get('type') == 'message'
             ):
-                user = event['user']
+                #user = event['user']
                 text = event['text']
 
                     # Helena calls the Google API, gets sentiment score
