@@ -32,7 +32,7 @@ if slack_client.rtm_connect():
                     slack_client.api_call(
                         "chat.postMessage",
                         channel="im.open", user=user
-                        text="This is a DM"
+                        text = "This is a DM--"
                         print("DM Sent")
                     )
                 else:
