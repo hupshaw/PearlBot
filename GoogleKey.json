@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "slack-sentiments-1550354070255",
+  "private_key_id": "059a5a602d39d34eb9349a7f7fb47e88e711e68c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDA5Mf1GvTeoL18\nhRO89m90vYvFYRM4W1CBwZbvCOz3gLAD0CWjPkqkQf0D69BJXQxNUIlX7bXB/kVo\nhR1zz7O+VeK65RqeGZOEui/7h9nIUtPv+K0PgRMJqwHhwjBmCWMgsrcOVpU82f2x\n/aa4PFyMOJExpvfR5ZK4Dyx4ONJZzPTYiC/F17Lms2MtlVg6I+NgLyoUlHBnnE3g\nnFGCYGiuonlOMouE5so9BfRr0zSfwFSVxYV5z1R5JSr/KbrWtV9b023C0xV4HRGY\nVd/FH4npyg2hZbVP41PuJgD3dKICgy5LNS3hGHTfByxQxASfhBGOrBd/rJEUk5S3\n7ik1T6BRAgMBAAECggEAGDQ88QEWa98Ql9DdBq+Hkcb9BGHndwFiSz3e8hSVI4Nm\n0ruqFV9KH21WUckjxCjkU8lAyqM91N9Sl0hoxzDvVXlSb3AzFFaSP6vbPH0x8ySN\nioWSNalVGbf3Dvx+dTdFVIOIW8i6hj22S0DQTDrqw/+PHINeglyDugvRYS6EGpdY\n8jAiBy9yZDh4GZ9WwEwY7UpnwDulyrDzW47Xi/LDVx9tIelhLB/sihMwoHils+1M\ns1hjijSzsgboXYclk7QLzTpfN3igx/pm601WfbraDYdJa1hcLX5hJ7q7jyhaWmSj\nJBzZJrS9ShU0iWkSKfFMHNdMbopOVtT8dVJ7ZYySLwKBgQDkMdJykVGR365MANtI\na/ft47hmF/kHKO7mtamt77LSch2PZZp0hW6H0L6x2YgM0eSot/K4ldhDrnrRev3F\nXSt1gmvt/hIkULIOlYihuZHIFXIhRrPibpffOJAeaqDhJ9VAYlRFnkCo4C3MM/mS\nL1BzVL719LxssTR4qVZNGXISPwKBgQDYZc0Ak6iuZoQzfCBkFh5ZF0+uIQRht2Cm\nVLPwdKyk2wq8IvKNRwESb4Y6+Hxd9/I4phT0sAhAqbX28bgGwbnemkg++cn6PZ+v\n+ub2YY5a+ouZ5s2rSXB7EnNeN/f9GWhCN+M34AnuriDgxTfKNbGF2NFuoFkp+MVx\nAIIzrWqJbwKBgQDgUNWFx7H+inpEvibQ50mdsNeojHJBBozpf7Rfhhwr4P+L4Z3W\nYwAHRDzgiWzC5WU4MTLJHour5I1Y9OUXKQI6jk1YcwQUbLrLuVTJXaifne1GJsFX\nmc1zIaASNlEVY9muY7phgTIgj9aVQJZZjGcyKCFbmAvNcNiasCNkwNmwcwKBgQCK\nbfUKXWsWxbXkSY9e91dKnsL2HWD0MZ6+SIkjVT/r5cOkPqbzAW0KIhW4O6UzZ52n\n53aYYNOmqeohoteaWutQH1oAD0LJtgolRVfiXN34DTaoqSEAZeZylIcAysT1P/+V\n/LJ51/QCn5mgsAjUbiy19tFi92iSlPWZKD4iWNlCOQKBgQCVMV/8oIeWVB32sQ0M\nY4SBsatxj7/t1klVltIdNaWgCihe09r/TtuuBAalEX3WdvjvgQPH9S12OIRwxeHS\nzACoOUXII+68Jkzx5C6PFR/qqzDPRTZTN21wwzu/b52udkP+483IYNKpFBzhxhNJ\nKs8HohQMrepn2dzOX5R1BEAHhg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-rs2wlz9d07kp@slack-sentiments-1550354070255.iam.gserviceaccount.com",
+  "client_id": "107841850531371161416",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-rs2wlz9d07kp%40slack-sentiments-1550354070255.iam.gserviceaccount.com"
+}
