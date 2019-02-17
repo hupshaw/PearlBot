@@ -34,7 +34,7 @@ if slack_client.rtm_connect():
                         channel="im.open",
                         user=user,
                         text="This is a DM--"
-                        #print("DM Sent")
+                        print("DM Sent")
                     )
                 else:
                     print("All Good")
