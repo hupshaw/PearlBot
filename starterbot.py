@@ -14,6 +14,7 @@ starterbot_id = None
 if slack_client.rtm_connect():
     print("Connected")
     while True:
+        print("Test")
         events = events = slack_client.rtm_read()
         for event in events:
             if (
