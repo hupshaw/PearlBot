@@ -14,35 +14,41 @@ def print_result(annotations):
     jsonfile = open("data.json", "r")
     jsonObj = json.load(jsonfile)
     jsonfile.close()
-
-    if score < 0:
-        for item in range(len(jsonObj["low"])):
-            print ("low")
-
+    message = ""
 
     for index, sentence in enumerate(annotations.sentences):
         sentence_sentiment = sentence.sentiment.score
-        print('Sentence {} has a sentiment score of {}'.format(index, sentence_sentiment))
 
-    print('Overall Sentiment: score of {} with magnitude of {}'.format(score, magnitude))
-    return score
+    if sentence_sentiment < 0 and sentence_sentiment >= -.3:
+       r = random.randint(0,len(jsonObj["low"]))
+       #print(len(jsonObj["low"]))
+       #print("low " + str(r))
+       message = jsonObj["low"][r]
+    elif sentence_sentiment < -.3 and sentence_sentiment >= -.6:
+       r = random.randint(0,len(jsonObj["medium"]))
+       #print("med " + str(r))
+       message = jsonObj["medium"][r]
+    else:
+       r = random.randint(0,len(jsonObj["high"]))
+       #print("high " +str(r))
+       message = jsonObj["high"][r]
+
+
+
+    return (sentence_sentiment,message)
 
 
 def analyze(message):
     """Run a sentiment analysis request on text within a passed filename."""
     client = language.LanguageServiceClient()
-
-    with open(message, 'r') as review_file:
-        # Instantiates a plain text document.
-        content = review_file.read()
-
     document = types.Document(
-        content=content,
+        content=message,
         type=enums.Document.Type.PLAIN_TEXT)
     annotations = client.analyze_sentiment(document=document)
 
     # Calls values from function above
-    printMessage = print_result(annotations)
+    score = print_result(annotations)
+    return score
 
 #main
 if __name__ == '__main__':
