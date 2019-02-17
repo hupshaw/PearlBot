@@ -29,13 +29,20 @@ if slack_client.rtm_connect():
                 if len(text) > 1:
                 # Helena looks the sentiment score from API up in Database
                 # Helena returns to you a string (message) to be posted by the slack bot to the user
-                    slack_client.api_call(
-                        "chat.postMessage",
-                        channel="im.open",
-                        user=user,
-                        text="This is a DM"
+                    print(
+                        slack_client.api_call(
+                            "im.open",
+                            user=user
+                        )
                     )
-                    print("DM Sent")
+
+                    # slack_client.api_call(
+                    #     "chat.postMessage",
+                    #     channel="im.open",
+                    #     user=user,
+                    #     text="This is a DM"
+                    # )
+                    # print("DM Sent")
                 else:
                     print("All Good")
 
