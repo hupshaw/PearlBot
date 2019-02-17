@@ -50,6 +50,7 @@ if slack_client.rtm_connect():
                         text="Testing 1 2 3"
                     )
                     print("DM Sent")
+                    text = ""
                 else:
                     print("All Good")
 
