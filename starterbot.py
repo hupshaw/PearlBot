@@ -31,9 +31,10 @@ if slack_client.rtm_connect():
                 # Helena returns to you a string (message) to be posted by the slack bot to the user
                     slack_client.api_call(
                         "chat.postMessage",
-                        channel="im.open", user=user
-                        text = "This is a DM--"
-                        print("DM Sent")
+                        channel="im.open",
+                        user=user,
+                        text="This is a DM--"
+                        #print("DM Sent")
                     )
                 else:
                     print("All Good")
